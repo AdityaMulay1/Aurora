@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url("https://4kwallpapers.com/images/wallpapers/aurora-borealis-northern-lights-mountain-range-night-time-3440x1440-5938.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        #header {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            font-size: 2em;
+            opacity: 0; /* Initially hidden for fade-in effect */
+            animation: fadeIn 2s ease-in-out forwards; /* Fade-in animation */
+            font-family: 'Raleway', sans-serif; /* Change font to Raleway */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #welcome-message {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-family: 'Raleway', sans-serif; /* Change font to Raleway */
+        }
+
+        #middle-right-image {
+            position: absolute;
+            top: 30%;
+            right: 5%;
+            max-width: 20%;
+            height: auto;
+            opacity: 0; /* Initially hidden for zoom-in effect */
+            animation: zoomIn 4s ease-in-out forwards; /* Zoom-in animation */
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(1.2);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        #icons-container {
+            position: absolute;
+            bottom: 5%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .icon-box {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        /* Stylish animated buttons */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: white;
+            background-color: rgba(38, 22, 83, 0.7); /* Transparent background */
+            border-radius: 5px;
+            transition: background-color 0.5s ease;
+        }
+
+        .btn:hover {
+            background-color: rgba(76, 42, 121, 0.7); /* Darker transparent color on hover */
+            transform: scale(1.05); /* Slight scale increase on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="welcome-message">Hey there!</div>
+        <div>Welcome to AURORA</div>
+    </div>
+
+    <img id="middle-right-image" src="https://devtechnosys.com/images/2023/app-of-the-week/evolve/weeks-banner2.webp"
+        alt="Middle Right Image">
+
+    <div id="icons-container">
+        <div class="icon-box">
+            <a href="chat.html" class="btn">Chat</a>
+        </div>
+        <div class="icon-box">
+            <a href="tasks.html" class="btn">Tasks</a>
+        </div>
+        <div class="icon-box">
+            <a href="meditation.html" class="btn">Meditate</a>
+        </div>
+        <div class="icon-box">
+            <a href="journal.html" class="btn">Journal</a>
+        </div>
+    </div>
+</body>
+
+</html>

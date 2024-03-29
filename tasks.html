@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://wallpapercosmos.com/w/full/5/e/0/191493-3840x2160-desktop-4k-aurora-borealis-wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .task {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .task img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .button-85 {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-85:before {
+            content: "";
+            background: linear-gradient(
+                45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000
+            );
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .button-85:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <span><a href="hp.html"></a> 7760 XP</span>
+            <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png" alt="Profile Picture">
+        </div>
+        <button class="button-85" role="button"><a href="socials.html" style="text-decoration: none; color: inherit;">Socials </a></button>
+
+    </header>
+
+    <main>
+        <div class="task">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/lungs-5463473-4551650.png" alt="Breathing">
+            <span>Breathing Exercise</span>
+        </div>
+
+        <div class="task">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/running-exercise-3895813-3273509.png"
+                alt="Exercise">
+            <span>Running Exercise</span>
+        </div>
+
+        <div class="task">
+            <img src="https://static.vecteezy.com/system/resources/previews/016/763/045/original/cut-out-garden-design-isolated-on-transparent-background-3d-rendering-illustration-png.png"
+                alt="Gardening">
+            <span>Gardening</span>
+        </div>
+
+        <div class="task">
+            <img src="https://static.vecteezy.com/system/resources/previews/011/356/177/original/young-girl-reading-a-book-while-standing-3d-character-illustration-png.png"
+                alt="Reading">
+            <span>Reading Time</span>
+        </div>
+
+        <div class="task">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/social-distance-3274327-2732759@0.png"
+                alt="Socialization">
+            <span>Socialization</span>
+        </div>
+
+        <div class="task">
+            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/self-care-9388362-7678209.png?f=webp"
+                alt="Self Care">
+            <span>Self Care</span>
+        </div>
+    </main>
+</body>
+    </main>
+</body>
+
+</html>
